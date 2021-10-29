@@ -1,0 +1,94 @@
+
+
+<mat-sidenav-container class="sidenav" autosize>
+  <mat-toolbar color="primary" class="toolbar">
+
+  </mat-toolbar>
+
+  <mat-sidenav #sidenav class="sidenav-menu" mode="side" opened="true" (mouseenter)="mouseenter()" (mouseleave)="mouseleave()">
+    <mat-toolbar color="primary" class="toolbar-menu">
+      <span *ngIf="!isExpanded" >
+      <img src="assets/open-source.png" class = 'logo' alt = "logo" />
+      </span>
+      <span *ngIf="isExpanded" >
+        <div><img src="assets/khuwy-small.png" class = 'logo-small' alt = "logo" /></div>
+      </span>
+    </mat-toolbar>
+
+    <mat-nav-list class="nav-list">
+      <mat-nav-list class = "menu-entier">
+        <mat-list-item (click)="showSubmenu = !showSubmenu" class="parent">
+          <span class="full-width" *ngIf="isExpanded" >
+            <button class = 'bouton-bleu-full'>
+              <span class = 'disposition-texte'>
+                <mat-icon mat-list-icon class ='icone-blanc'>
+                  people
+                </mat-icon>
+                <span class ='texte-bouton'>
+                  Information
+                </span>
+              </span>
+            </button>
+          </span>
+          <span class="full-width" *ngIf="!isExpanded" >
+          <mat-icon mat-list-icon class="icone-bleu" (mouseenter)="mouseenter()" (mouseleave)="mouseleave()">
+            people
+          </mat-icon>
+          </span>
+        </mat-list-item>
+        <mat-list-item (click)="showSubmenu = !showSubmenu" class="parent">
+          <span class="full-width" *ngIf="isExpanded" >
+            <button class = 'button-border-bleu'>
+              <span class = 'disposition-texte'>
+                <mat-icon mat-list-icon class ='texte-bouton2'>
+                  business_center
+                </mat-icon>
+                <span class ='texte-bouton'>
+                  Traitement
+                </span>
+              </span>
+            </button>
+          </span>
+          <span class="full-width" *ngIf="!isExpanded" >
+          <mat-icon mat-list-icon class="icone-bleu" (mouseenter)="mouseenter()" (mouseleave)="mouseleave()">
+            business_center
+          </mat-icon>
+          </span>
+        </mat-list-item>
+        <mat-list-item (click)="showSubmenu = !showSubmenu" class="parent">
+          <span class="full-width" *ngIf="isExpanded" >
+            <button class = 'button-border-bleu'>
+              <span class = 'disposition-texte'>
+                <mat-icon mat-list-icon class ='texte-bouton2'>
+                  calendar_today
+                </mat-icon>
+                <span class ='texte-bouton'>Forum
+                </span>
+              </span>
+            </button>
+          </span>
+          <span class="full-width" *ngIf="!isExpanded" >
+          <mat-icon mat-list-icon class="icone-bleu" (mouseenter)="mouseenter()" (mouseleave)="mouseleave()">
+            calendar_today
+          </mat-icon>
+          </span>
+        </mat-list-item>
+      </mat-nav-list>
+        <button mat-icon-button class="arrow-button-color" (click)="isExpanded = !isExpanded">
+          <mat-icon *ngIf="isExpanded" class = "arrow-button">chevron_left</mat-icon>
+          <mat-icon *ngIf="!isExpanded" class = "arrow-button">chevron_right</mat-icon>
+        </button>
+
+    </mat-nav-list>
+  </mat-sidenav>
+  <div class="sidenav-content">
+    <app-information></app-information>
+  </div>
+
+</mat-sidenav-container>
+
+
+
+<!-- Copyright 2017 Google Inc. All Rights Reserved.
+    Use of this source code is governed by an MIT-style license that
+    can be found in the LICENSE file at http://angular.io/license -->

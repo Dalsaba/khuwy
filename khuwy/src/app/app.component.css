@@ -1,0 +1,197 @@
+/* * * * * * Architecture * * * * **/
+
+.toolbar {
+border-bottom : #F8F8F8 solid;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin-bottom: 15px;
+    margin-right: 30px;
+    box-shadow: 10px 5px 5px darkgrey;
+    background-color:white;
+
+}
+
+.sidenav {
+    height: 100%;
+}
+
+.sidenav-menu {
+    user-select: none;
+    display: flex;
+    justify-content: flex-end;
+    border-right : #F0F0F0 solid;
+
+
+}
+
+.toolbar-menu {
+    height: 20%;
+    background-color:white;
+
+}
+
+.nav-list {
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.menu-entier {
+    height: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+.sidenav-content {
+    margin-left: 10px;
+    margin-right: 30px;
+    margin-top : 2%;
+
+}
+
+.full-width {
+    width: 100%;
+}
+
+.menu-button {
+    transition: 300ms ease-in-out;
+    transform: rotate(0deg);
+}
+
+.menu-button.rotated {
+    transform: rotate(180deg);
+}
+
+.disposition-texte {
+    width: 125px;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+/* * * * * * Button * * * * **/
+
+
+.logo {
+    margin-bottom: 50px;
+    margin-top: 50px;
+    height: 100px;
+    width: auto;
+}
+
+
+.logo-small {
+    margin-bottom: 50px;
+    margin-top: 50px;
+    height: 100px;
+    width: auto;
+}
+
+.bouton-bleu-full {
+    color: white;
+    background-color: #004365;
+    width: 200px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    border: 3px #004365 solid;
+    border-radius: 10px;
+
+}
+
+.bouton-bleu-full:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 3px 15px white;
+    transition: 1s ease-out;
+
+}
+
+.button-border-bleu {
+    color: #004365;
+    width: 200px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    border: 3px #004365 solid;
+    background-color: white;
+    border-radius: 10px;
+
+
+}
+
+.button-border-bleu:hover {
+    transform: translateY(-5px);
+    transition: 1s ease-out;
+
+
+}
+
+.arrow-button {
+    color: white;
+}
+
+.arrow-button-color {
+    background-color: #004365;
+
+}
+
+.icone-rose {
+    color: #004365;
+    margin-bottom: 5%;
+}
+
+.icone-person {
+    color: white;
+}
+
+.icone-person-color{
+    margin-right: 10px;
+    margin-bottom: 10px;
+    background-color: #7585BF;
+    box-shadow: 6px 6px 6px lightgrey ;
+}
+
+.icone-power {
+    color: gray();
+}
+
+.icone-power-color{
+    margin-right: 10px;
+    margin-bottom: 10px;
+    background-color: lightgrey;
+    box-shadow: 6px 6px 6px lightgrey ;
+}
+
+.icone-person-and-text {
+    display: flex;
+}
+.icone-texte {
+    margin-right: 10px;
+    font-style: italic;
+}
+
+.Khuwy {
+    color: black;
+    font-size: 200%;
+    font-family: Georgia;
+
+}
+
+
+.texte-bouton {
+    font-size: 130%;
+    font-family: Georgia;
+}
+/* il faut que la page entiere soir séparé en deux +
+que la truc principale soit en dessous de la toolbar +
+que la toolbar soit fixe*/
